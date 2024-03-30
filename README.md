@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Nutrition Data Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React application is designed to visualize nutritional data exported from MyFitnessPal. Users can upload a CSV file to see a graphical representation of their daily calorie and protein intake. Additionally, by clicking on a point on the chart, users can view a list of meals consumed on that specific day, complete with protein and calorie counts.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Upload and process CSV files exported from MyFitnessPal.
+- Chart daily calorie and protein intake using a line chart.
+- Interact with chart points to see detailed meal information.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Chart.js
+- PapaParse
+- chartjs-plugin-datalabels
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Setup
 
-### `npm test`
+Clone the repository and install the dependencies to get started:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone https://github.com/your-username/nutrition-data-visualizer.git
+cd nutrition-data-visualizer
+npm install
+```
 
-### `npm run build`
+Run the project locally with:
+```npm start```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Click "Choose File" and select a CSV file in the format provided by MyFitnessPal.
+2. The application will render a line chart displaying total daily calories and protein intake.
+3. Click a point on the chart to display a detailed list of meals for that day below the chart.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Expected CSV File Format
 
-### `npm run eject`
+The CSV file should have at least the following columns:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Date (YYYY-MM-DD format)
+- Meal (name of the meal)
+- Calories (numeric value)
+- Protein (g) (numeric value)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Here is an example of the CSV format expected by the application:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+Date,Meal,Calories,Protein (g)
+2024-03-16,Breakfast,359,24.4
+2024-03-16,Lunch,500,30
+2024-03-16,Dinner,700,50
+..
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+Feel free to fork the repository, make changes, and submit pull requests with your updates.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open-sourced under the [MIT License](LICENSE).
