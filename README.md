@@ -10,7 +10,7 @@ This React application is designed to visualize nutritional data exported from M
 
 ## Live Demo
 
-You can try out a live version of the app at [example.netlify.com](https://example.netlify.com).
+You can try out a live version of the app at [nutritionvisualizer.netlify.app/](https://nutritionvisualizer.netlify.app/).
 
 ## Technologies Used
 
