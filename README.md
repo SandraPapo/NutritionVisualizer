@@ -8,6 +8,10 @@ This React application is designed to visualize nutritional data exported from M
 - Chart daily calorie and protein intake using a line chart.
 - Interact with chart points to see detailed meal information.
 
+## Live Demo
+
+You can try out a live version of the app at [example.netlify.com](https://example.netlify.com).
+
 ## Technologies Used
 
 - React
@@ -20,13 +24,14 @@ This React application is designed to visualize nutritional data exported from M
 Clone the repository and install the dependencies to get started:
 
 ```
-git clone https://github.com/your-username/nutrition-data-visualizer.git
+git clone https://github.com/SandraPapo/NutritionVisualizer.git
 cd nutrition-data-visualizer
 npm install
 ```
 
 Run the project locally with:
 ```npm start```
+
 
 ## Usage
 
